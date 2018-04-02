@@ -1,0 +1,31 @@
+{{#if wantFlow}}
+// @flow
+import * as React from 'react';
+{{else}}
+import React from 'react';
+import PropTypes from 'prop-types';
+{{/if}}
+
+{{#if wantFlow}}
+type Props = {
+
+};
+{{/if}}
+
+export class Component{{#if wantFlow}}<Props>{{/if}} extends {{{ type }}} {
+  render() {
+    return (
+      <div>
+        
+      </div>
+    );
+  }
+}
+
+{{#unless wantFlow}}
+Component.propTypes = {
+
+};
+{{/unless}}
+
+Component.displayName = '{{ properCase componentName }}';

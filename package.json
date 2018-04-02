@@ -1,0 +1,12 @@
+{
+  "name": "lodgify-generators",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "generate": "plop --plopfile generators/index.js"
+  },
+  "devDependencies": {
+    "plop": "^1.8.0"
+  }
+}
